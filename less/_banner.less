@@ -1,0 +1,33 @@
+//
+//Banner Area Style
+// -----------------------
+
+header[role="banner"]{
+  .banner-brand{
+    padding-top: 40px;
+  }
+  > .container {
+    position: relative;
+  }
+  .utility-nav{
+    position: absolute;
+    top:0;
+    right:0;
+    z-index: 1999;
+    > ul {
+      list-style: none;
+      > li {
+        float: left;
+        > a {
+          display: inline-block;
+          padding: 8px 12px;
+          &:hover,
+          &:focus {
+              text-decoration: none;
+          }
+
+        }
+      }
+    }
+  }
+}
