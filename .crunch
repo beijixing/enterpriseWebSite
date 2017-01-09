@@ -104,6 +104,7 @@
 			],
 			"sources": [
 				"_banner.less",
+				"_buttons-custom.less",
 				"_carousel.less",
 				"_footer.less",
 				"_navbar.less",

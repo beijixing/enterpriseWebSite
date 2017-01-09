@@ -125,7 +125,8 @@
         </header>
 
         <main role="main">
-            <div>
+            <div class="container">
+                <div class="row">
             <section class="content-primary col-md-5">
                 <div id="homepage-feature" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
@@ -162,82 +163,119 @@
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
-                <div>
                     <h2>Wellcom!</h2>
                     <p>The resulting code is more concise, and mimics the structure of your HTML.
                         You can also bundle pseudo-selectors with your mixins using this method.
                         Here's the classic clearfix hack, rewritten as a mixin (& represents the
                         current selector parent)
                     </p>
-                    <p> <a class="btn btn-primary pull-right" href="#">see our portfolio <span class="icon fa fa-arrow-circle-right"></span></a> </p>
-                </div>
+                    <p> <a class="btn btn-feature btn-lg pull-right" href="#">see our portfolio <span class="icon fa fa-arrow-circle-right"></span></a> </p>
             </section>
 
             <section class="content-secondary col-md-4">
-                <div class="">
                     <h3>Sometimes!</h3>
                     <p>Sometimes, you may want to group your variables or mixins, for organizational purposes, or just to
                         offer some encapsulation. You can do this pretty intuitively in Less,say you want to bundle some
                         mixins and variables under #bundle, for later reuse or distributing
                     </p>
                     <p> <a class="btn btn-primary pull-right" href="#">see our portfolio <span class="icon fa fa-arrow-circle-right"></span></a> </p>
-                </div>
-                <div class="">
+
                     <h3>Programming!</h3>
                     <p>Scope in Less is very similar to that of programming languages. Variables and mixins are first looked
                         for locally, and if they aren't found, the compiler will look in the parent scope, and so on.
                     </p>
                     <p> <a class="btn btn-primary pull-right" href="#">see what's new <span class="icon fa fa-arrow-circle-right"></span></a> </p>
-                </div>
-                <div class="">
+
                     <h3>Namespaces & Accessors</h3>
                     <p>Variables and mixins do not have to be declared before being used so the following Less code is
                         identical to the previous example:
                     </p>
                     <p> <a class="btn btn-primary pull-right" href="#">Meet the team! <span class="icon fa fa-arrow-circle-right"></span></a> </p>
-                </div>
 
             </section>
 
             <section class="content-tertiary col-md-3">
-                <div class="">
                     <h4>Scope!</h4>
                     <p>The examples above focused on using variables to control values in CSS rules, but they can also be
                         used in other places as well, such as selector names, property names, URLs and @import statements.
                     </p>
-                    <p> <a class="btn btn-primary pull-right" href="#">see our portfolio <span class="icon fa fa-arrow-circle-right"></span></a> </p>
-                </div>
-                <div class="">
+                    <p> <a class="btn btn-default btn-xs pull-right" href="#">see our portfolio <span class="icon fa fa-arrow-circle-right"></span></a> </p>
+
                     <h4>Variable Interpolation</h4>
                     <p>Note that currently, only variables which have been declared in the root or current scope will be
                         considered and that only the current file and calling files will be considered when looking for a
                         variable. This means that this usage is typically limited to when you inject a variable into the
                         compile process or define a variable at the beginning of your root file.
                     </p>
-                    <p> <a class="btn btn-primary pull-right" href="#">see what's new <span class="icon fa fa-arrow-circle-right"></span></a> </p>
-                </div>
-                <div class="">
+                    <p> <a class="btn btn-default btn-xs pull-right" href="#">see what's new <span class="icon fa fa-arrow-circle-right"></span></a> </p>
+
                     <h4>Import statements</h4>
                     <p>When you are importing a css file and not using the inline option (e.g. the import statement will
                         be kept intact) then the above does not apply.
                     </p>
-                    <p> <a class="btn btn-primary pull-right" href="#">Meet the team! <span class="icon fa fa-arrow-circle-right"></span></a> </p>
-                </div>
+                    <p> <a class="btn btn-default btn-xs pull-right" href="#">Meet the team! <span class="icon fa fa-arrow-circle-right"></span></a> </p>
             </section>
+                </div>
             </div>
         </main>
 
         <footer role="contentinfo">
-            <img src="img/logo.png" alt="智诺天齐" width="120">
-            <ul class="social">
-                <li> <a href="#" title="Twitter Profile"> <span class="icon fa fa-twitter"></span> </a> </li>
-                <li> <a href="#" title="Facebook Page"> <span class="icon fa fa-facebook"></span> </a> </li>
-                <li> <a href="#" title="LinkedIn Profile"> <span class="icon fa fa-linkedin"></span> </a> </li>
-                <li> <a href="#" title="Google+ Profile"> <span class="icon fa fa-google-plus"></span> </a> </li>    
-                <li> <a href="#" title="Github Profile"> <span class="icon fa fa-github-alt"></span> </a> </li>
-            </ul>
-        </footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 col-md-2">
+                        <h3>Categories</h3>
+                        <ul>
+                            <li><a href="#">Shoes</a></li>
+                            <li><a href="#">Clothing</a></li>
+                            <li><a href="#">Accessories</a></li>
+                            <li><a href="#">Men</a></li>
+                            <li><a href="#">Women</a></li>
+                            <li><a href="#">Kids</a></li>
+                            <li><a href="#">Pets</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-2">
+                        <h3>Styles</h3>
+                        <ul>
+                            <li><a href="#">Athletic</a>  </li>
+                            <li><a href="#">Casual</a></li>
+                            <li><a href="#">Dress</a></li>
+                            <li><a href="#">Everyday</a></li>
+                            <li><a href="#">Other Days</a></li>
+                            <li><a href="#">Alternative</a></li>
+                            <li><a href="#">Otherwise</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-2">
+                        <h3>Other</h3>
+                        <ul>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Another link</a></li>
+                            <li><a href="#">Link again</a></li>
+                            <li><a href="#">Try this</a></li>
+                            <li><a href="#">Don't you dare</a></li>
+                            <li><a href="#">Oh go ahead</a></li>
+                        </ul>
+                    </div>
+                    <div class="clearfix visible-sm"></div>
+                    <div class="col-sm-12 col-md-6">
+                        <h3>About Us</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse euismod congue bibendum. Aliquam erat volutpat. Phasellus eget justo lacus. Vivamus pharetra ullamcorper massa, nec ultricies metus gravida egestas. Duis congue viverra arcu, ac aliquet turpis rutrum a. Donec semper vestibulum dapibus. Integer et sollicitudin metus. Vivamus at nisi turpis. Phasellus vel tellus id felis cursus hendrerit.</p>
+                        <a class="btn btn-default btn-xs pull-right" href="#">Learn more <span class="fa fa-circle-arrow-right"></span></a>
+                    </div>
 
+                </div>
+
+                <ul class="social">
+                    <li> <a href="#" title="Twitter Profile"> <span class="icon fa fa-twitter"></span> </a> </li>
+                    <li> <a href="#" title="Facebook Page"> <span class="icon fa fa-facebook"></span> </a> </li>
+                    <li> <a href="#" title="LinkedIn Profile"> <span class="icon fa fa-linkedin"></span> </a> </li>
+                    <li> <a href="#" title="Google+ Profile"> <span class="icon fa fa-google-plus"></span> </a> </li>
+                    <li> <a href="#" title="Github Profile"> <span class="icon fa fa-github-alt"></span> </a> </li>
+                </ul>
+                <div><img src="img/logo.png" alt="智诺天齐" width="80"></div>
+            </div>
+        </footer>
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>

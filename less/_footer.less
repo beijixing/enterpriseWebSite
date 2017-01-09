@@ -5,28 +5,67 @@ footer[role="contentinfo"]{
 	padding-top: 24px;
 	padding-bottom: 36px;
 	text-align: center;
-}
+	font-size:@font-size-small;
+	background-color: darken(@navbar-inverse-bg, 18%);
+	color: darken(@navbar-inverse-color, 18%);
 
-ul.social {
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	text-align: center;
-	> li {
-		display: inline-block;
-		> a {
+	a {
+		color: @navbar-inverse-color;
+		&:focus,
+		&:hover,
+		&:active {
+			color: @navbar-inverse-link-hover-color;
+		}
+	}
+
+	.btn-default {
+		color: darken(@navbar-inverse-bg, 18%) !important;
+	}
+
+	h3 {
+		font-size:120%;
+		margin-bottom: 4px;
+		text-transform: uppercase;
+		text-align: left;
+	}
+
+	ul {
+		list-style:none;
+		padding:0;
+		margin:0;
+		text-align: left;
+	}
+	
+	.container {
+		p {
+			text-align: left;
+		}
+
+	}
+
+	ul.social {
+		margin: 0;
+		padding: 24px 0 0;
+		width: 100%;
+		text-align: center;
+		> li {
 			display: inline-block;
-			font-size: 18px;
-			line-height: 30px;
-			.square(30px);
-			border-radius: 36px;
-			background-color: @gray-light;
-			color: #fff;
-			margin: 0 3px 3px 0;
+			> a {
+				display: inline-block;
+				font-size: 18px;
+				line-height: 30px;
+				.square(30px);
+				border-radius: 36px;
+				background-color: darken(@navbar-inverse-bg, 27%);
+				color: darken(@navbar-inverse-color, 18%);
+				margin: 0 3px 3px 0;
 				&:hover {
 					text-decoration: none;
-					background-color: @link-hover-color;
+					background-color: darken(@navbar-inverse-bg, 32%);
+					color: @navbar-inverse-link-hover-color;
 				}
+			}
 		}
 	}
 }
+
